@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
 import {AngularFireModule} from 'angularfire2';
-import {AngularFireDatabaseModule} from 'angularfire2/database';
+import {AngularFireDatabaseModule} from 'angularfire2/database-deprecated';
+import {AngularFireDatabase} from 'angularfire2/database-deprecated';
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyBJ2JsZAb2fo0m0HrDVrLa8oJcepcb2pBw',
@@ -22,6 +24,8 @@ export const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule
   ],

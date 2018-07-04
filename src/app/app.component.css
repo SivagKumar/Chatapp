@@ -1,0 +1,15 @@
+
+input{
+    width:80%;
+}
+
+div p{
+    align-content: center;
+    color: #FFFFFF;
+    border-left: 6px solid #00A8B6;
+}
+
+#content{
+    
+    height: 50vw;
+}
